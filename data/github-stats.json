@@ -1,26 +1,19 @@
 {
   "user": "BUKOWSKIREAL",
-  "updated_at": "2026-10-16T03:05:01.673376+00:00",
+  "updated_at": "2026-10-16T03:23:57.684189+00:00",
   "total_stars": 45,
-  "contributions_1y": 513,
-  "commits_1y": 136,
+  "contributions_1y": 516,
+  "commits_1y": 143,
   "prs_1y": 28,
   "issues_1y": 31,
-  "total_prs": 66,
+  "total_prs": 28,
   "total_issues": 31,
   "repo_stars": {
     "hotcorners": 5,
-    "git-for-agent-demo": 0,
     "trace": 5,
-    "readlist": 0,
     "nixos-config": 1,
     "scrollwm": 1,
-    "personal-web": 0,
-    "-": 0,
-    "winwinwinwinwinwin": 0,
     "gitv": 0,
-    "dobby-computer-use": 0,
-    "infra_for_shu": 0,
     "pi-fusion": 1,
     "BUKOWSKIREAL": 0,
     "magpie-gemini-web": 32
@@ -28,26 +21,26 @@
   "languages": [
     {
       "name": "Python",
-      "size": 751669,
-      "percentage": 43.2,
+      "size": 763306,
+      "percentage": 43.6,
       "color": "#3572A5"
     },
     {
       "name": "Swift",
       "size": 398093,
-      "percentage": 22.9,
+      "percentage": 22.7,
       "color": "#F05138"
     },
     {
       "name": "JavaScript",
       "size": 372459,
-      "percentage": 21.4,
+      "percentage": 21.3,
       "color": "#f1e05a"
     },
     {
       "name": "TypeScript",
       "size": 159842,
-      "percentage": 9.2,
+      "percentage": 9.1,
       "color": "#3178c6"
     },
     {
@@ -88,7 +81,7 @@
     },
     "School_Running": {
       "repo": "goodsmellvegetable/School_Running",
-      "prs": 10,
+      "prs": 0,
       "issues": 0
     },
     "BewlyCat": {
@@ -97,7 +90,7 @@
       "issues": 1
     },
     "community": {
-      "prs": 12,
+      "prs": 8,
       "issues": 18,
       "repos": [
         "BerriAI/litellm",
@@ -105,11 +98,8 @@
         "MAXeaglet/commandcode-proxy",
         "MoonshotAI/kimi-code",
         "QoderAI/changelog-CLI-zh_CN",
-        "RCBI/Dobby-Engineering-Management-Agent",
         "anomalyco/models.dev",
         "billnotfound/activity_tracker",
-        "billnotfound/fountain",
-        "billnotfound/waterproxy",
         "earendil-works/pi",
         "hikariming/ghfind",
         "iAmCorey/Wake",

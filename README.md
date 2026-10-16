@@ -11,8 +11,8 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 - 📫 [bukaosiji@outlook.com](mailto:bukaosiji@outlook.com) · [X](https://x.com/zhangru81770932)
 
 <!-- stats:start -->
-⭐ **45** stars · 🔥 **513** contributions this year · 📝 **136** commits · 🔀 **66** PRs · 🐛 **31** issues
-<br/><sub>Python 43% · Swift 23% · JavaScript 21% · TypeScript 9%</sub>
+⭐ **45** stars · 🔥 **516** contributions this year · 📝 **143** commits · 🔀 **28** PRs · 🐛 **31** issues
+<br/><sub>Python 44% · Swift 23% · JavaScript 21% · TypeScript 9%</sub>
 <!-- stats:end -->
 
 #### 🧰 Things I made
@@ -35,9 +35,9 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 |:--|:--|--:|--:|
 | [**CodexBar**](https://github.com/steipete/CodexBar) | Grok token history, StepFun credits & Claude/Codex pricing | [5](https://github.com/steipete/CodexBar/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | 5 |
 | [**agentsview**](https://github.com/kenn-io/agentsview) | StepCode ingestion, Devin dedup & Antigravity effort | [4](https://github.com/kenn-io/agentsview/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | 6 |
-| [**School_Running**](https://github.com/goodsmellvegetable/School_Running) | macOS native console, curve trajectory & DMG release CI | [10](https://github.com/goodsmellvegetable/School_Running/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | – |
+| [**School_Running**](https://github.com/goodsmellvegetable/School_Running) | macOS native console, curve trajectory & DMG release CI | – | – |
 | [**BewlyCat**](https://github.com/keleus/BewlyCat) | Homepage filter empty-state interaction & fixes | [2](https://github.com/keleus/BewlyCat/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | 1 |
-| 🌍 **community** | [models.dev](https://github.com/anomalyco/models.dev), [Wake](https://github.com/iAmCorey/Wake), [pi](https://github.com/earendil-works/pi), [codex](https://github.com/openai/codex) and 15 other repos | 12 | 18 |
+| 🌍 **community** | [models.dev](https://github.com/anomalyco/models.dev), [Wake](https://github.com/iAmCorey/Wake), [pi](https://github.com/earendil-works/pi), [codex](https://github.com/openai/codex) and 12 other repos | 8 | 18 |
 <!-- oss:end -->
 
 <sub>Numbers refresh daily via [GitHub Actions](.github/workflows/update-profile.yml).</sub>
