@@ -1,175 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 680" width="920" height="680" style="max-width: 100%; height: auto;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 682 584" width="682" height="584" style="max-width: 100%; height: auto;">
   <defs>
     <style>
-      .mono { font-family: 'Paper Mono', 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; }
-      .serif { font-family: 'Paper Latin', 'Songti SC', 'Noto Serif SC', Georgia, serif; }
-      .art { font-family: 'JetBrains Mono NF', 'JetBrains Mono', 'SFMono-Regular', Menlo, monospace; }
+      .mono { font-family: 'Paper Mono', 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }
+      .serif { font-family: 'Paper Latin', Charter, 'Iowan Old Style', Georgia, 'Songti SC', 'Noto Serif SC', serif; }
       .branch { stroke: #6e6a86; stroke-width: 1.2; fill: none; stroke-linecap: square; }
     </style>
     <clipPath id="card-clip">
-      <rect width="920" height="680" rx="10"/>
+      <rect width="682" height="584" rx="10"/>
     </clipPath>
     <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
       <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#211f31" stroke-width="0.6"/>
     </pattern>
-    <clipPath id="lang-bar-clip">
-      <rect x="266" y="204" width="612" height="5" rx="2.5"/>
-    </clipPath>
   </defs>
 
-  <!-- Background Card & Paper Grid -->
-  <rect width="920" height="680" rx="10" fill="#191724"/>
-  <rect width="920" height="680" clip-path="url(#card-clip)" fill="url(#grid)"/>
-  <rect x="0.5" y="0.5" width="919" height="679" rx="9.5" fill="none" stroke="#403d52" stroke-width="1"/>
+  <rect width="682" height="584" rx="10" fill="#191724"/>
+  <rect width="682" height="584" clip-path="url(#card-clip)" fill="url(#grid)"/>
+  <rect x="0.5" y="0.5" width="681" height="583" rx="9.5" fill="none" stroke="#403d52" stroke-width="1"/>
 
-  <!-- Left Sidebar (x = 42) -->
-  <g class="mono">
-    <text x="42" y="50" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#908caa">BUKOWSKIIIII</text>
-    <text x="42" y="86" font-size="12" fill="#908caa">~/</text>
-
-    <!-- Sidebar Tree Navigation -->
-    <path class="branch" d="M 45.0 93.8 V 203.8 M 45.0 103.8 H 58.0 M 45.0 123.8 H 58.0 M 45.0 143.8 H 58.0 M 45.0 163.8 H 58.0 M 45.0 183.8 H 58.0 M 45.0 203.8 H 58.0"/>
-    <text x="64" y="108" font-size="11.5" fill="#908caa">home</text>
-    <text x="64" y="128" font-size="11.5" fill="#908caa">cv/</text>
-    <text x="64" y="148" font-size="11.5" fill="#908caa">blog/</text>
-    <text x="64" y="168" font-size="11.5" fill="#908caa">travel/</text>
-    <text x="64" y="188" font-size="11.5" fill="#908caa">status/</text>
-    <text x="64" y="208" font-size="11.5" font-weight="700" fill="#8be9fd">github.url</text>
-
-    <text x="42" y="240" font-size="10.5" fill="#6e6a86">site: bukowskiiiiii.uk</text>
-    <text x="42" y="258" font-size="10.5" fill="#6e6a86">mode: &gt;_ cli / web</text>
-  </g>
-
-  <!-- Braille ASCII Art -->
-  <text class="art" font-size="9.2" fill="#908caa" xml:space="preserve">
-    <tspan x="34" y="292.0">                       ⢀⣴⣶⣤⣀</tspan>
-    <tspan x="34" y="302.8">                       ⠸⢿⣿⣿⣿⣷</tspan>
-    <tspan x="34" y="313.6">                      ⢀⡌⢠⡈⢹⣿⣿⣧⡀</tspan>
-    <tspan x="34" y="324.4">                      ⠸⢼⠣⠃⠠⣀⡿⠿⠁</tspan>
-    <tspan x="34" y="335.2">                       ⠈⠋ ⢀⡆⡇</tspan>
-    <tspan x="34" y="346.0">                       ⠐⠲⡂⠈ ⢧</tspan>
-    <tspan x="34" y="356.8">                      ⡤⠒⠻⢄⣠⠴ ⠙⠲⣄</tspan>
-    <tspan x="34" y="367.6">                    ⢀⠞          ⠳⡀</tspan>
-    <tspan x="34" y="378.4">        ⣠⣀⣀        ⢀⠎            ⣇</tspan>
-    <tspan x="34" y="389.2">        ⢣ ⠈⠉⠙⠒⠲⠤⢄  ⣉ ⢰       ⢠   ⢸</tspan>
-    <tspan x="34" y="400.0">        ⠸⡀       ⣧⠎⡈⣱⢼       ⡎   ⢸⣶⡀</tspan>
-    <tspan x="34" y="410.8">      ⣀⣠⠤⡇  ⠰⣇   ⢱⣀⣸⠡⠼⢀⣀     ⢣⠤⣄⣀⢸⣿⠁</tspan>
-    <tspan x="34" y="421.6">⢀⠤⠴⠒⠋⠉⠁  ⢸       ⠘⡟⢻⡤⠤⢤⢨⣭⠵⠦⠤⠤⠜  ⡏⣿⡿</tspan>
-    <tspan x="34" y="432.4">⢸⡐⠒⠤⢄⣀    ⠙⠒⠦⢤⣀⡀  ⣿⡿⣷⣤⣤ ⢧⣄⣀⣀⣀  ⡸⢀⣿⠇</tspan>
-    <tspan x="34" y="443.2"> ⠈⡏⡲⠲⠤⣍⣑⠒⠦⢤⣀⡀  ⠉⠙⠒⠒⠒⠉⠁      ⠉⠉⠉ ⢀⣈⠵⡄</tspan>
-    <tspan x="34" y="454.0">  ⡇⡇   ⠈⠉⠓⠲⠤⣍⣙⠒⠦⠤⣀⡀        ⢀⣠⠤⠒⣊⣩⡤⡖⠁</tspan>
-    <tspan x="34" y="464.8">  ⡇⡇       ⠜  ⠉⠑⠒⠤⢬⣉⠒⠢⠠⠄⠴⠒⣉⡥⢴⣲⡋⠁⢸⡇⡇</tspan>
-    <tspan x="34" y="475.6">  ⡇⡇       ⢰  ⣄⡀ ⣆⣠⡴⠉⠙⠒⢲⠚⠉⠁⢀⣴⣿⣿⣿⣿⡇⡇</tspan>
-    <tspan x="34" y="486.4">  ⡇⡇       ⠘⡄⣗⣿⣇ ⢻ ⡇  ⢸⢸⣀⣤⣾⣿⣿⡿⠟⢉⡀⡇⡇</tspan>
-    <tspan x="34" y="497.2">  ⡇⡇        ⢧⢸⡙⠻⡄⢸ ⡇  ⢸⢸⢿⣿⠿⠋⠁    ⡇⣇</tspan>
-    <tspan x="34" y="508.0">  ⡇⡇        ⢸⡄⠃ ⠃⢸ ⡇  ⢸⢸ ⡇       ⡇⣿</tspan>
-    <tspan x="34" y="518.8">  ⡇⡇        ⡸⢣   ⠈⡆⡇  ⢸⢸ ⡇       ⡇⡏⠄</tspan>
-    <tspan x="34" y="529.6">  ⡇⡇        ⡇⠘⡆   ⠃⡇  ⢸⢸⢰⠁       ⡇⡇</tspan>
-    <tspan x="34" y="540.4">  ⢧⠅       ⢸  ⠘⢲⠚⣏ ⠇  ⢸⢸⢸        ⡇⡇</tspan>
-    <tspan x="34" y="551.2">           ⡃   ⡞ ⠈⣢⠁  ⢸⢸⠸        ⠥⠁</tspan>
-    <tspan x="34" y="562.0">          ⢀⡭⠓⠒⣬⢴⣶⠶⠋   ⢸⢸</tspan>
-    <tspan x="34" y="572.8">        ⣠⠤⠭⢤⣤⣼⠆⠋⠁     ⢸⣘</tspan>
-    <tspan x="34" y="583.6">        ⠛⠷⠞⠛⠁</tspan>
-  </text>
-
-  <!-- Left Sidebar Footer -->
-  <g class="mono">
-    <text x="42" y="626" font-size="10.5" fill="#908caa">bukaosiji@outlook.com</text>
-    <text x="42" y="644" font-size="10.5" fill="#6e6a86">make impact.</text>
-  </g>
-
-  <!-- Right Sheet (x = 248 to 878) -->
-  <text x="248" y="50" class="mono" font-size="12" fill="#908caa">~/github</text>
-  <text x="248" y="82" class="mono" font-size="24" font-weight="600" fill="#e0def4">bukowskiiiiii</text>
-  <text x="878" y="82" class="serif" font-size="12" text-anchor="end" fill="#908caa">Life is one long regression to the mean.</text>
-
-  <!-- Section 1: activity/ · overview -->
-  <text x="248" y="122" class="mono" font-size="12.5" font-weight="500" fill="#bd93f9">▾ activity/ · overview</text>
-  <text x="266" y="148" class="mono" font-size="12">
-    <tspan font-weight="600" fill="#e0def4">45</tspan><tspan fill="#908caa"> stars earned   </tspan><tspan font-weight="600" fill="#e0def4">513</tspan><tspan fill="#908caa"> contributions (1y)   </tspan><tspan font-weight="600" fill="#e0def4">66</tspan><tspan fill="#908caa"> pull requests   </tspan><tspan font-weight="600" fill="#e0def4">31</tspan><tspan fill="#908caa"> issues   </tspan><tspan font-weight="600" fill="#e0def4">136</tspan><tspan fill="#908caa"> commits</tspan>
-  </text>
-
-  <!-- Section 2: stack/ -->
-  <text x="248" y="188" class="mono" font-size="12.5" font-weight="500" fill="#bd93f9">▾ stack/</text>
-  <g clip-path="url(#lang-bar-clip)">
-    <rect x="266.0" y="204" width="264.4" height="5" fill="#3572A5"/><rect x="530.4" y="204" width="140.0" height="5" fill="#F05138"/><rect x="670.4" y="204" width="131.0" height="5" fill="#f1e05a"/><rect x="801.4" y="204" width="56.2" height="5" fill="#3178c6"/><rect x="857.6" y="204" width="10.5" height="5" fill="#89e051"/><rect x="868.1" y="204" width="6.7" height="5" fill="#7e7eff"/><rect x="874.8" y="204" width="2.8" height="5" fill="#663399"/><rect x="877.6" y="204" width="0.4" height="5" fill="#e34c26"/>
-  </g>
-  <path class="branch" d="M 266.0 214.8 V 269.8 M 266.0 225.8 H 282.0 M 266.0 247.8 H 282.0 M 266.0 269.8 H 282.0"/>
-
-  <g class="mono" font-size="12" font-weight="500" fill="#e0def4">
-    <text x="298" y="230">languages</text>
-    <text x="298" y="252">systems</text>
-    <text x="298" y="274">focus</text>
-  </g>
-
-  <g class="serif" font-size="12" fill="#c8c5dc">
-    <text x="438" y="230">Python · TypeScript · Swift · JavaScript · Go</text>
-    <text x="438" y="252">macOS (Accessibility / Cocoa) · NixOS Flakes · Linux</text>
-    <text x="438" y="274">Coding Agents · Local-First Tooling · Reverse Engineering</text>
-  </g>
-
-  <g class="mono" font-size="11" text-anchor="end" fill="#908caa">
-    <text x="878" y="230">Nix · Shell · Typst</text>
-    <text x="878" y="252">SQLite · Docker</text>
-    <text x="878" y="274">System-One AI</text>
-  </g>
-
-  <!-- Section 3: selected-work/ -->
-  <text x="248" y="316" class="mono" font-size="12.5" font-weight="500" fill="#bd93f9">▾ selected-work/</text>
-  <path class="branch" d="M 266.0 326.8 V 447.8 M 266.0 337.8 H 282.0 M 266.0 359.8 H 282.0 M 266.0 381.8 H 282.0 M 266.0 403.8 H 282.0 M 266.0 425.8 H 282.0 M 266.0 447.8 H 282.0"/>
-
-  <g class="mono" font-size="12" font-weight="500" fill="#e0def4">
-    <text x="298" y="342">magpie-gemini-web</text>
-    <text x="298" y="364">trace</text>
-    <text x="298" y="386">hotcorners</text>
-    <text x="298" y="408">scrollwm</text>
-    <text x="298" y="430">pi-fusion</text>
-    <text x="298" y="452">nixos-config</text>
-  </g>
-
-  <g class="serif" font-size="12" fill="#c8c5dc">
-    <text x="438" y="342">Gemini Web &amp; native Argon Task provider for Magpie</text>
-    <text x="438" y="364">Content-addressed local version tracker for CLI agents</text>
-    <text x="438" y="386">Interactive macOS Hot Corners CLI manager</text>
-    <text x="438" y="408">niri-style scrollable tiling window manager for macOS</text>
-    <text x="438" y="430">Persistent lead/sidekick orchestration for Pi</text>
-    <text x="438" y="452">Daily NixOS configuration built around flakes</text>
-  </g>
-
-  <g class="mono" font-size="11" text-anchor="end">
-    <text x="878" y="342"><tspan fill="#908caa">Python · JS · </tspan><tspan fill="#f1fa8c">★</tspan><tspan fill="#908caa"> 32</tspan></text>
-    <text x="878" y="364"><tspan fill="#908caa">Python · </tspan><tspan fill="#f1fa8c">★</tspan><tspan fill="#908caa"> 5</tspan></text>
-    <text x="878" y="386"><tspan fill="#908caa">Shell · </tspan><tspan fill="#f1fa8c">★</tspan><tspan fill="#908caa"> 5</tspan></text>
-    <text x="878" y="408"><tspan fill="#908caa">Swift · </tspan><tspan fill="#f1fa8c">★</tspan><tspan fill="#908caa"> 1</tspan></text>
-    <text x="878" y="430"><tspan fill="#908caa">TypeScript · </tspan><tspan fill="#f1fa8c">★</tspan><tspan fill="#908caa"> 1</tspan></text>
-    <text x="878" y="452"><tspan fill="#908caa">Nix · </tspan><tspan fill="#f1fa8c">★</tspan><tspan fill="#908caa"> 1</tspan></text>
-  </g>
-
-  <!-- Section 4: open-source/ -->
-  <text x="248" y="494" class="mono" font-size="12.5" font-weight="500" fill="#bd93f9">▾ open-source/</text>
-  <path class="branch" d="M 266.0 504.8 V 603.8 M 266.0 515.8 H 282.0 M 266.0 537.8 H 282.0 M 266.0 559.8 H 282.0 M 266.0 581.8 H 282.0 M 266.0 603.8 H 282.0"/>
-
-  <g class="mono" font-size="12" font-weight="500" fill="#e0def4">
-    <text x="298" y="520">CodexBar</text>
-    <text x="298" y="542">agentsview</text>
-    <text x="298" y="564">School_Running</text>
-    <text x="298" y="586">BewlyCat</text>
-    <text x="298" y="608">community</text>
-  </g>
-
-  <g class="serif" fill="#c8c5dc">
-    <text x="438" y="520" font-size="12">Grok token history, StepFun credits &amp; Claude/Codex pricing</text>
-    <text x="438" y="542" font-size="12">StepCode ingestion, Devin dedup &amp; Antigravity effort</text>
-    <text x="438" y="564" font-size="12">macOS native console, curve trajectory &amp; DMG release CI</text>
-    <text x="438" y="586" font-size="12">Homepage filter empty-state interaction &amp; fixes</text>
-    <text x="438" y="608" font-size="10.8">models.dev · Wake · harness-perf · codex-mcp · pi · magpie</text>
-  </g>
-
-  <g class="mono" font-size="11" text-anchor="end" fill="#908caa">
-    <text x="878" y="520">5 PRs · 5 issues</text>
-    <text x="878" y="542">4 PRs · 6 issues</text>
-    <text x="878" y="564">10 PRs</text>
-    <text x="878" y="586">2 PRs · 1 issue</text>
-    <text x="878" y="608">12 PRs · 18 issues</text>
-  </g>
+  <text x="32" y="40" class="mono" font-size="12.5" font-weight="500" fill="#bd93f9">▾ activity/</text>
+  <text x="62.0" y="68" class="mono" font-size="19" font-weight="600" fill="#e0def4">45</text><text x="62.0" y="87" class="mono" font-size="10.5" fill="#908caa">stars</text>
+  <text x="179.6" y="68" class="mono" font-size="19" font-weight="600" fill="#e0def4">513</text><text x="179.6" y="87" class="mono" font-size="10.5" fill="#908caa">contribs · 1y</text>
+  <text x="297.2" y="68" class="mono" font-size="19" font-weight="600" fill="#e0def4">136</text><text x="297.2" y="87" class="mono" font-size="10.5" fill="#908caa">commits · 1y</text>
+  <text x="414.8" y="68" class="mono" font-size="19" font-weight="600" fill="#e0def4">66</text><text x="414.8" y="87" class="mono" font-size="10.5" fill="#908caa">pull requests</text>
+  <text x="532.4" y="68" class="mono" font-size="19" font-weight="600" fill="#e0def4">31</text><text x="532.4" y="87" class="mono" font-size="10.5" fill="#908caa">issues</text>
+  <text x="32" y="128" class="mono" font-size="12.5" font-weight="500" fill="#bd93f9">▾ stack/</text>
+  <path class="branch" d="M 40.0 138.8 V 215.8 M 40.0 149.8 H 54.0 M 40.0 171.8 H 54.0 M 40.0 193.8 H 54.0 M 40.0 215.8 H 54.0"/>
+  <text x="62" y="154" class="mono" font-size="12" font-weight="500" fill="#e0def4">languages</text><text x="202" y="154" class="mono" font-size="11.5" xml:space="preserve"><tspan fill="#3572A5">●</tspan><tspan fill="#c8c5dc"> Python</tspan><tspan fill="#6e6a86"> 43%</tspan><tspan fill="#F05138">  ●</tspan><tspan fill="#c8c5dc"> Swift</tspan><tspan fill="#6e6a86"> 23%</tspan><tspan fill="#f1e05a">  ●</tspan><tspan fill="#c8c5dc"> JavaScript</tspan><tspan fill="#6e6a86"> 21%</tspan><tspan fill="#3178c6">  ●</tspan><tspan fill="#c8c5dc"> TypeScript</tspan><tspan fill="#6e6a86"> 9%</tspan></text>
+  <text x="62" y="176" class="mono" font-size="12" font-weight="500" fill="#e0def4">platforms</text><text x="202" y="176" class="serif" font-size="12" fill="#c8c5dc">macOS (Accessibility / Cocoa) · NixOS Flakes · Linux</text>
+  <text x="62" y="198" class="mono" font-size="12" font-weight="500" fill="#e0def4">tools</text><text x="202" y="198" class="serif" font-size="12" fill="#c8c5dc">Nix · Shell · Typst · SQLite · Docker</text>
+  <text x="62" y="220" class="mono" font-size="12" font-weight="500" fill="#e0def4">focus</text><text x="202" y="220" class="serif" font-size="12" fill="#c8c5dc">Coding Agents · Local-First Tooling · Reverse Engineering</text>
+  <text x="32" y="262" class="mono" font-size="12.5" font-weight="500" fill="#bd93f9">▾ selected-work/</text>
+  <path class="branch" d="M 40.0 272.8 V 393.8 M 40.0 283.8 H 54.0 M 40.0 305.8 H 54.0 M 40.0 327.8 H 54.0 M 40.0 349.8 H 54.0 M 40.0 371.8 H 54.0 M 40.0 393.8 H 54.0"/>
+  <text x="62" y="288" class="mono" font-size="12" font-weight="500" fill="#e0def4">magpie-gemini-web</text><text x="202" y="288" class="serif" font-size="12" fill="#c8c5dc">Gemini Web &amp; native Argon Task provider for Magpie</text><text x="606" y="288" class="mono" font-size="11" text-anchor="end" fill="#908caa">Python · JS</text><text x="622" y="288" class="mono" font-size="11" text-anchor="start" fill="#f1fa8c">★</text><text x="650" y="288" class="mono" font-size="11" text-anchor="end" fill="#908caa">32</text>
+  <text x="62" y="310" class="mono" font-size="12" font-weight="500" fill="#e0def4">trace</text><text x="202" y="310" class="serif" font-size="12" fill="#c8c5dc">Content-addressed local version tracker for CLI agents</text><text x="606" y="310" class="mono" font-size="11" text-anchor="end" fill="#908caa">Python</text><text x="622" y="310" class="mono" font-size="11" text-anchor="start" fill="#f1fa8c">★</text><text x="650" y="310" class="mono" font-size="11" text-anchor="end" fill="#908caa">5</text>
+  <text x="62" y="332" class="mono" font-size="12" font-weight="500" fill="#e0def4">hotcorners</text><text x="202" y="332" class="serif" font-size="12" fill="#c8c5dc">Interactive macOS Hot Corners CLI manager</text><text x="606" y="332" class="mono" font-size="11" text-anchor="end" fill="#908caa">Shell</text><text x="622" y="332" class="mono" font-size="11" text-anchor="start" fill="#f1fa8c">★</text><text x="650" y="332" class="mono" font-size="11" text-anchor="end" fill="#908caa">5</text>
+  <text x="62" y="354" class="mono" font-size="12" font-weight="500" fill="#e0def4">scrollwm</text><text x="202" y="354" class="serif" font-size="12" fill="#c8c5dc">niri-style scrollable tiling window manager for macOS</text><text x="606" y="354" class="mono" font-size="11" text-anchor="end" fill="#908caa">Swift</text><text x="622" y="354" class="mono" font-size="11" text-anchor="start" fill="#f1fa8c">★</text><text x="650" y="354" class="mono" font-size="11" text-anchor="end" fill="#908caa">1</text>
+  <text x="62" y="376" class="mono" font-size="12" font-weight="500" fill="#e0def4">pi-fusion</text><text x="202" y="376" class="serif" font-size="12" fill="#c8c5dc">Persistent lead/sidekick orchestration for Pi</text><text x="606" y="376" class="mono" font-size="11" text-anchor="end" fill="#908caa">TypeScript</text><text x="622" y="376" class="mono" font-size="11" text-anchor="start" fill="#f1fa8c">★</text><text x="650" y="376" class="mono" font-size="11" text-anchor="end" fill="#908caa">1</text>
+  <text x="62" y="398" class="mono" font-size="12" font-weight="500" fill="#e0def4">nixos-config</text><text x="202" y="398" class="serif" font-size="12" fill="#c8c5dc">Daily NixOS configuration built around flakes</text><text x="606" y="398" class="mono" font-size="11" text-anchor="end" fill="#908caa">Nix</text><text x="622" y="398" class="mono" font-size="11" text-anchor="start" fill="#f1fa8c">★</text><text x="650" y="398" class="mono" font-size="11" text-anchor="end" fill="#908caa">1</text>
+  <text x="32" y="438" class="mono" font-size="12.5" font-weight="500" fill="#bd93f9">▾ open-source/</text>
+  <path class="branch" d="M 40.0 448.8 V 547.8 M 40.0 459.8 H 54.0 M 40.0 481.8 H 54.0 M 40.0 503.8 H 54.0 M 40.0 525.8 H 54.0 M 40.0 547.8 H 54.0"/>
+  <text x="62" y="464" class="mono" font-size="12" font-weight="500" fill="#e0def4">CodexBar</text><text x="202" y="464" class="serif" font-size="12" fill="#c8c5dc">Grok token history, StepFun credits &amp; Claude/Codex pricing</text><text x="578" y="464" class="mono" font-size="11" text-anchor="end" fill="#908caa">5 PRs</text><text x="650" y="464" class="mono" font-size="11" text-anchor="end" fill="#908caa">5 issues</text>
+  <text x="62" y="486" class="mono" font-size="12" font-weight="500" fill="#e0def4">agentsview</text><text x="202" y="486" class="serif" font-size="12" fill="#c8c5dc">StepCode ingestion, Devin dedup &amp; Antigravity effort</text><text x="578" y="486" class="mono" font-size="11" text-anchor="end" fill="#908caa">4 PRs</text><text x="650" y="486" class="mono" font-size="11" text-anchor="end" fill="#908caa">6 issues</text>
+  <text x="62" y="508" class="mono" font-size="12" font-weight="500" fill="#e0def4">School_Running</text><text x="202" y="508" class="serif" font-size="12" fill="#c8c5dc">macOS native console, curve trajectory &amp; DMG release CI</text><text x="578" y="508" class="mono" font-size="11" text-anchor="end" fill="#908caa">10 PRs</text><text x="650" y="508" class="mono" font-size="11" text-anchor="end" fill="#908caa"></text>
+  <text x="62" y="530" class="mono" font-size="12" font-weight="500" fill="#e0def4">BewlyCat</text><text x="202" y="530" class="serif" font-size="12" fill="#c8c5dc">Homepage filter empty-state interaction &amp; fixes</text><text x="578" y="530" class="mono" font-size="11" text-anchor="end" fill="#908caa">2 PRs</text><text x="650" y="530" class="mono" font-size="11" text-anchor="end" fill="#908caa">1 issue</text>
+  <text x="62" y="552" class="mono" font-size="12" font-weight="500" fill="#e0def4">community</text><text x="202" y="552" class="serif" font-size="12" fill="#c8c5dc">models.dev · Wake · pi · codex · +15 more</text><text x="578" y="552" class="mono" font-size="11" text-anchor="end" fill="#908caa">12 PRs</text><text x="650" y="552" class="mono" font-size="11" text-anchor="end" fill="#908caa">18 issues</text>
 </svg>
