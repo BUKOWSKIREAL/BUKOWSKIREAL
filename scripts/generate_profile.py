@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """
-Generate GitHub profile SVGs matching https://bukowskiiiiii.uk/ minimal aesthetic.
+Refresh the generated stats, project and open-source blocks in the profile README.
 """
 
 import argparse
 from datetime import datetime, timezone
-import html
 import json
 import os
 from pathlib import Path
@@ -13,35 +12,6 @@ import subprocess
 import urllib.parse
 import urllib.request
 
-
-THEMES = {
-    "light": {
-        "paper": "#f8f8f8",
-        "grid": "#ececef",
-        "border": "#dedee1",
-        "hairline": "#d9d9dc",
-        "ink": "#2a2b33",
-        "body": "#4f515b",
-        "muted": "#6a737d",
-        "faint": "#959da5",
-        "section_accent": "#2f5af3",
-        "nav_active": "#2f5af3",
-        "star_accent": "#8a5a00",
-    },
-    "dark": {
-        "paper": "#191724",
-        "grid": "#211f31",
-        "border": "#403d52",
-        "hairline": "#403d52",
-        "ink": "#e0def4",
-        "body": "#c8c5dc",
-        "muted": "#908caa",
-        "faint": "#6e6a86",
-        "section_accent": "#bd93f9",
-        "nav_active": "#8be9fd",
-        "star_accent": "#f1fa8c",
-    },
-}
 
 LANG_COLORS = {
     "Python": "#3572A5",
@@ -240,204 +210,109 @@ def fetch_stats(token: str) -> dict:
     }
 
 
-def make_tree_path(x: float, ys: list[float], tick_len: float = 14.0) -> str:
-    """Generate crisp SVG path for tree branch connectors (vertical trunk + ticks)."""
-    if not ys:
-        return ""
-    step = ys[1] - ys[0] if len(ys) > 1 else 22.0
-    yt = ys[0] - 4.2 - (step / 2.0)
-    yb = ys[-1] - 4.2
-    d = [f"M {x:.1f} {yt:.1f} V {yb:.1f}"]
-    for y in ys:
-        ym = y - 4.2
-        d.append(f"M {x:.1f} {ym:.1f} H {x + tick_len:.1f}")
-    return " ".join(d)
+USER = "BUKOWSKIREAL"
+
+SELECTED_WORK = [
+    ("🐦", "magpie-gemini-web", "Gemini Web & native Argon Task provider for Magpie", "Python · JS"),
+    ("🧵", "trace", "Content-addressed local version tracker for CLI agents", "Python"),
+    ("🖥️", "hotcorners", "Interactive macOS Hot Corners CLI manager", "Shell"),
+    ("🪟", "scrollwm", "niri-style scrollable tiling window manager for macOS", "Swift"),
+    ("🤝", "pi-fusion", "Persistent lead/sidekick orchestration for Pi", "TypeScript"),
+    ("❄️", "nixos-config", "Daily NixOS configuration built around flakes", "Nix"),
+]
+
+OPEN_SOURCE = [
+    ("CodexBar", "Grok token history, StepFun credits & Claude/Codex pricing"),
+    ("agentsview", "StepCode ingestion, Devin dedup & Antigravity effort"),
+    ("School_Running", "macOS native console, curve trajectory & DMG release CI"),
+    ("BewlyCat", "Homepage filter empty-state interaction & fixes"),
+]
+
+# Shown by name in the community row; the rest are counted
+COMMUNITY_SHOWN = [
+    "anomalyco/models.dev",
+    "iAmCorey/Wake",
+    "earendil-works/pi",
+    "openai/codex",
+]
 
 
-# Card size and layout columns
-WIDTH = 682
-HEIGHT = 584
-X_HEAD = 32.0
-X_TRUNK = 40.0
-X_NAME = 62.0
-X_DESC = 202.0
-X_RIGHT = 650.0
-ROW = 22.0
+def plural(n: int, word: str) -> str:
+    return f"{n} {word}" if n == 1 else f"{n} {word}s"
 
 
-def render_svg(stats: dict, theme_name: str) -> str:
-    """Render the profile card: activity, stack, selected work and open source."""
-    p = THEMES[theme_name]
-    esc = html.escape
-
-    repo_stars = stats.get("repo_stars", {})
-    external = stats.get("external", {})
-
-    def rows(y0: float, n: int) -> list[float]:
-        return [y0 + i * ROW for i in range(n)]
-
-    def heading(y: float, label: str) -> str:
-        return (
-            f'<text x="{X_HEAD:.0f}" y="{y:.0f}" class="mono" font-size="12.5" font-weight="500" '
-            f'fill="{p["section_accent"]}">▾ {esc(label)}</text>'
-        )
-
-    def tree(ys: list[float]) -> str:
-        return f'<path class="branch" d="{make_tree_path(X_TRUNK, ys)}"/>'
-
-    def name_desc(y: float, name: str, desc: str) -> str:
-        return (
-            f'<text x="{X_NAME:.0f}" y="{y:.0f}" class="mono" font-size="12" font-weight="500" fill="{p["ink"]}">{esc(name)}</text>'
-            f'<text x="{X_DESC:.0f}" y="{y:.0f}" class="serif" font-size="12" fill="{p["body"]}">{esc(desc)}</text>'
-        )
-
-    def meta(x: float, y: float, text: str, fill: str, anchor: str = "end") -> str:
-        return (
-            f'<text x="{x:.0f}" y="{y:.0f}" class="mono" font-size="11" text-anchor="{anchor}" '
-            f'fill="{fill}">{esc(text)}</text>'
-        )
-
-    body = []
-
-    # activity/: five number-over-label cells
-    stat_cells = [
-        (stats.get("total_stars", 0), "stars"),
-        (stats.get("contributions_1y", 0), "contribs · 1y"),
-        (stats.get("commits_1y", 0), "commits · 1y"),
-        (stats.get("total_prs", 0), "pull requests"),
-        (stats.get("total_issues", 0), "issues"),
-    ]
-    body.append(heading(40, "activity/"))
-    cell_w = (X_RIGHT - X_NAME) / len(stat_cells)
-    for i, (value, label) in enumerate(stat_cells):
-        x = X_NAME + i * cell_w
-        body.append(
-            f'<text x="{x:.1f}" y="68" class="mono" font-size="19" font-weight="600" fill="{p["ink"]}">{value}</text>'
-            f'<text x="{x:.1f}" y="87" class="mono" font-size="10.5" fill="{p["muted"]}">{esc(label)}</text>'
-        )
-
-    # stack/: languages come from the data, each with its GitHub color
+def render_stats(stats: dict) -> str:
     languages = [l for l in stats.get("languages", []) if l.get("percentage", 0) >= 1][:4]
-    lang_spans = []
-    for i, lang in enumerate(languages):
-        sep = "  " if i else ""
-        lang_spans.append(
-            f'<tspan fill="{lang["color"]}">{sep}●</tspan>'
-            f'<tspan fill="{p["body"]}"> {esc(lang["name"])}</tspan>'
-            f'<tspan fill="{p["faint"]}"> {lang["percentage"]:.0f}%</tspan>'
-        )
-    stack = [
-        ("platforms", "macOS (Accessibility / Cocoa) · NixOS Flakes · Linux"),
-        ("tools", "Nix · Shell · Typst · SQLite · Docker"),
-        ("focus", "Coding Agents · Local-First Tooling · Reverse Engineering"),
-    ]
-    stack_ys = rows(154.0, 1 + len(stack))
-    body.append(heading(128, "stack/"))
-    body.append(tree(stack_ys))
-    body.append(
-        f'<text x="{X_NAME:.0f}" y="{stack_ys[0]:.0f}" class="mono" font-size="12" font-weight="500" '
-        f'fill="{p["ink"]}">languages</text>'
-        f'<text x="{X_DESC:.0f}" y="{stack_ys[0]:.0f}" class="mono" font-size="11.5" '
-        f'xml:space="preserve">{"".join(lang_spans)}</text>'
+    langs = " · ".join(f"{l['name']} {l['percentage']:.0f}%" for l in languages)
+    return (
+        f"⭐ **{stats.get('total_stars', 0)}** stars · "
+        f"🔥 **{stats.get('contributions_1y', 0)}** contributions this year · "
+        f"📝 **{stats.get('commits_1y', 0)}** commits · "
+        f"🔀 **{stats.get('total_prs', 0)}** PRs · "
+        f"🐛 **{stats.get('total_issues', 0)}** issues\n"
+        f"<br/><sub>{langs}</sub>"
     )
-    for y, (label, value) in zip(stack_ys[1:], stack):
-        body.append(name_desc(y, label, value))
 
-    # selected-work/: language right-aligned, stars in their own column
-    selected_work = [
-        ("magpie-gemini-web", "Gemini Web & native Argon Task provider for Magpie", "Python · JS"),
-        ("trace", "Content-addressed local version tracker for CLI agents", "Python"),
-        ("hotcorners", "Interactive macOS Hot Corners CLI manager", "Shell"),
-        ("scrollwm", "niri-style scrollable tiling window manager for macOS", "Swift"),
-        ("pi-fusion", "Persistent lead/sidekick orchestration for Pi", "TypeScript"),
-        ("nixos-config", "Daily NixOS configuration built around flakes", "Nix"),
-    ]
-    work_ys = rows(288.0, len(selected_work))
-    body.append(heading(262, "selected-work/"))
-    body.append(tree(work_ys))
-    for y, (name, desc, lang) in zip(work_ys, selected_work):
-        body.append(
-            name_desc(y, name, desc)
-            + meta(X_RIGHT - 44, y, lang, p["muted"])
-            + meta(X_RIGHT - 28, y, "★", p["star_accent"], "start")
-            + meta(X_RIGHT, y, str(repo_stars.get(name, 0)), p["muted"])
+
+def render_work(stats: dict) -> str:
+    repo_stars = stats.get("repo_stars", {})
+    lines = ["| | Project | What it does | ⭐ |", "|:-:|:--|:--|--:|"]
+    for emoji, name, desc, lang in SELECTED_WORK:
+        lines.append(
+            f"| {emoji} | [**{name}**](https://github.com/{USER}/{name}) "
+            f"| {desc} <sub>`{lang}`</sub> | {repo_stars.get(name, 0)} |"
         )
+    return "\n".join(lines)
 
-    # open-source/: PRs and issues in two aligned columns
-    def count(n: int, word: str) -> str:
-        if n <= 0:
-            return ""
-        return f"{n} {word}" if n == 1 else f"{n} {word}s"
+
+def render_open_source(stats: dict) -> str:
+    external = stats.get("external", {})
+    lines = ["| Project | What I worked on | PRs | Issues |", "|:--|:--|--:|--:|"]
+    for name, desc in OPEN_SOURCE:
+        e = external.get(name, {})
+        repo = e.get("repo", "")
+        prs, issues = e.get("prs", 0), e.get("issues", 0)
+        pr_link = f"[{prs}](https://github.com/{repo}/pulls?q=is%3Apr+author%3A{USER})" if prs else "–"
+        lines.append(f"| [**{name}**](https://github.com/{repo}) | {desc} | {pr_link} | {issues or '–'} |")
 
     comm = external.get("community", {})
-    shown = ["models.dev", "Wake", "pi", "codex"]
-    more = max(0, len(comm.get("repos", [])) - len(shown))
-    comm_desc = " · ".join(shown) + (f" · +{more} more" if more else "")
+    repos = comm.get("repos", [])
+    shown = [r for r in COMMUNITY_SHOWN if r in repos]
+    names = ", ".join(f"[{r.split('/')[-1]}](https://github.com/{r})" for r in shown)
+    more = len(repos) - len(shown)
+    if more > 0:
+        names += f" and {plural(more, 'other repo')}"
+    lines.append(
+        f"| 🌍 **community** | {names} "
+        f"| {comm.get('prs', 0) or '–'} "
+        f"| {comm.get('issues', 0) or '–'} |"
+    )
+    return "\n".join(lines)
 
-    open_source = []
-    for name, desc in [
-        ("CodexBar", "Grok token history, StepFun credits & Claude/Codex pricing"),
-        ("agentsview", "StepCode ingestion, Devin dedup & Antigravity effort"),
-        ("School_Running", "macOS native console, curve trajectory & DMG release CI"),
-        ("BewlyCat", "Homepage filter empty-state interaction & fixes"),
-    ]:
-        e = external.get(name, {})
-        open_source.append((name, desc, e.get("prs", 0), e.get("issues", 0)))
-    open_source.append(("community", comm_desc, comm.get("prs", 0), comm.get("issues", 0)))
-    os_ys = rows(464.0, len(open_source))
-    body.append(heading(438, "open-source/"))
-    body.append(tree(os_ys))
-    for y, (name, desc, prs, issues) in zip(os_ys, open_source):
-        body.append(
-            name_desc(y, name, desc)
-            + meta(X_RIGHT - 72, y, count(prs, "PR"), p["muted"])
-            + meta(X_RIGHT, y, count(issues, "issue"), p["muted"])
-        )
 
-    nl = "\n  "
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}" style="max-width: 100%; height: auto;">
-  <defs>
-    <style>
-      .mono {{ font-family: 'Paper Mono', 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, 'Liberation Mono', monospace; }}
-      .serif {{ font-family: 'Paper Latin', Charter, 'Iowan Old Style', Georgia, 'Songti SC', 'Noto Serif SC', serif; }}
-      .branch {{ stroke: {p["faint"]}; stroke-width: 1.2; fill: none; stroke-linecap: square; }}
-    </style>
-    <clipPath id="card-clip">
-      <rect width="{WIDTH}" height="{HEIGHT}" rx="10"/>
-    </clipPath>
-    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="{p["grid"]}" stroke-width="0.6"/>
-    </pattern>
-  </defs>
-
-  <rect width="{WIDTH}" height="{HEIGHT}" rx="10" fill="{p["paper"]}"/>
-  <rect width="{WIDTH}" height="{HEIGHT}" clip-path="url(#card-clip)" fill="url(#grid)"/>
-  <rect x="0.5" y="0.5" width="{WIDTH - 1}" height="{HEIGHT - 1}" rx="9.5" fill="none" stroke="{p["border"]}" stroke-width="1"/>
-
-  {nl.join(body)}
-</svg>
-"""
+def replace_block(text: str, name: str, content: str) -> str:
+    """Replace what sits between <!-- name:start --> and <!-- name:end -->."""
+    start, end = f"<!-- {name}:start -->", f"<!-- {name}:end -->"
+    i, j = text.find(start), text.find(end)
+    if i < 0 or j < i:
+        raise ValueError(f"README is missing the {start} … {end} markers")
+    return text[: i + len(start)] + "\n" + content + "\n" + text[j:]
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate GitHub profile SVGs.")
+    parser = argparse.ArgumentParser(description="Refresh the generated blocks in the profile README.")
     parser.add_argument("--refresh", action="store_true", help="Fetch fresh data from GitHub API")
     parser.add_argument("--root", type=str, default="", help="Project root directory")
     args = parser.parse_args()
 
     root_dir = Path(args.root) if args.root else Path(__file__).resolve().parent.parent
-    data_dir = root_dir / "data"
-    assets_dir = root_dir / "assets"
-    stats_file = data_dir / "github-stats.json"
-
-    data_dir.mkdir(parents=True, exist_ok=True)
-    assets_dir.mkdir(parents=True, exist_ok=True)
-
-    token = get_github_token()
+    stats_file = root_dir / "data" / "github-stats.json"
+    readme_file = root_dir / "README.md"
 
     if args.refresh or not stats_file.exists():
         print("Fetching fresh GitHub statistics...")
-        stats = fetch_stats(token)
+        stats = fetch_stats(get_github_token())
+        stats_file.parent.mkdir(parents=True, exist_ok=True)
         with open(stats_file, "w", encoding="utf-8") as f:
             json.dump(stats, f, indent=2, ensure_ascii=False)
         print(f"Saved stats to {stats_file}")
@@ -446,20 +321,12 @@ def main():
         with open(stats_file, "r", encoding="utf-8") as f:
             stats = json.load(f)
 
-    # Render light and dark SVGs
-    light_svg = render_svg(stats, "light")
-    dark_svg = render_svg(stats, "dark")
-
-    light_path = assets_dir / "profile-light.svg"
-    dark_path = assets_dir / "profile-dark.svg"
-
-    with open(light_path, "w", encoding="utf-8") as f:
-        f.write(light_svg)
-    print(f"Generated {light_path}")
-
-    with open(dark_path, "w", encoding="utf-8") as f:
-        f.write(dark_svg)
-    print(f"Generated {dark_path}")
+    readme = readme_file.read_text(encoding="utf-8")
+    readme = replace_block(readme, "stats", render_stats(stats))
+    readme = replace_block(readme, "work", render_work(stats))
+    readme = replace_block(readme, "oss", render_open_source(stats))
+    readme_file.write_text(readme, encoding="utf-8")
+    print(f"Updated {readme_file}")
 
 
 if __name__ == "__main__":
