@@ -1,9 +1,9 @@
 {
   "user": "BUKOWSKIREAL",
-  "updated_at": "2026-10-16T03:28:03.673527+00:00",
-  "total_stars": 45,
-  "contributions_1y": 517,
-  "commits_1y": 387,
+  "updated_at": "2026-10-16T07:09:57.210911+00:00",
+  "total_stars": 50,
+  "contributions_1y": 519,
+  "commits_1y": 389,
   "prs_1y": 66,
   "issues_1y": 31,
   "total_prs": 66,
@@ -13,7 +13,7 @@
     "git-for-agent-demo": 0,
     "trace": 5,
     "readlist": 0,
-    "nixos-config": 1,
+    "nixos-config": 2,
     "scrollwm": 1,
     "personal-web": 0,
     "-": 0,
@@ -23,12 +23,12 @@
     "infra_for_shu": 0,
     "pi-fusion": 1,
     "BUKOWSKIREAL": 0,
-    "magpie-gemini-web": 32
+    "magpie-gemini-web": 36
   },
   "languages": [
     {
       "name": "Python",
-      "size": 763306,
+      "size": 763750,
       "percentage": 43.6,
       "color": "#3572A5"
     },
@@ -76,6 +76,11 @@
     }
   ],
   "external": {
+    "magpie": {
+      "repo": "yetone/magpie",
+      "prs": 0,
+      "issues": 3
+    },
     "CodexBar": {
       "repo": "steipete/CodexBar",
       "prs": 5,
@@ -98,7 +103,7 @@
     },
     "community": {
       "prs": 12,
-      "issues": 18,
+      "issues": 15,
       "repos": [
         "BerriAI/litellm",
         "KonghaYao/harness-perf-benchmark",
@@ -117,8 +122,7 @@
         "openai/codex",
         "stepfun-ai/Step-Code",
         "tmustier/codex-computer-use-mcp",
-        "tw93/Mole",
-        "yetone/magpie"
+        "tw93/Mole"
       ]
     }
   }
