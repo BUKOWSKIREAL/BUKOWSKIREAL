@@ -11,7 +11,7 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 - 📫 [bukaosiji@outlook.com](mailto:bukaosiji@outlook.com) · [X](https://x.com/zhangru81770932)
 
 <!-- stats:start -->
-⭐ **45** stars · 🔥 **516** contributions this year · 📝 **143** commits · 🔀 **66** PRs · 🐛 **31** issues
+⭐ **45** stars · 🔥 **517** contributions this year · 📝 **387** commits · 🔀 **66** PRs · 🐛 **31** issues
 <br/><sub>Python 44% · Swift 23% · JavaScript 21% · TypeScript 9%</sub>
 <!-- stats:end -->
 
