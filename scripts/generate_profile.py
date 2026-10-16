@@ -167,6 +167,7 @@ def fetch_stats(token: str) -> dict:
         issue_counts[repo] = issue_counts.get(repo, 0) + 1
 
     target_repos = [
+        "yetone/magpie",
         "steipete/CodexBar",
         "kenn-io/agentsview",
         "goodsmellvegetable/School_Running",
@@ -222,11 +223,16 @@ SELECTED_WORK = [
 ]
 
 OPEN_SOURCE = [
+    ("magpie", "StepCode agent adaptation: model config & disconnect restore "
+               "(merged in [8b39393](https://github.com/yetone/magpie/commit/8b393938f5a2a37a75b3b5ae034f51e3b5d12ef4), "
+               "shipped in v0.1.1172)"),
     ("CodexBar", "Grok token history, StepFun credits & Claude/Codex pricing"),
     ("agentsview", "StepCode ingestion, Devin dedup & Antigravity effort"),
     ("School_Running", "macOS native console, curve trajectory & DMG release CI"),
     ("BewlyCat", "Homepage filter empty-state interaction & fixes"),
 ]
+
+DISPLAY_NAMES = {"magpie": "Magpie"}
 
 # Shown by name in the community row; the rest are counted
 COMMUNITY_SHOWN = [
@@ -273,7 +279,8 @@ def render_open_source(stats: dict) -> str:
         repo = e.get("repo", "")
         prs, issues = e.get("prs", 0), e.get("issues", 0)
         pr_link = f"[{prs}](https://github.com/{repo}/pulls?q=is%3Apr+author%3A{USER})" if prs else "–"
-        lines.append(f"| [**{name}**](https://github.com/{repo}) | {desc} | {pr_link} | {issues or '–'} |")
+        issue_link = f"[{issues}](https://github.com/{repo}/issues?q=is%3Aissue+author%3A{USER})" if issues else "–"
+        lines.append(f"| [**{DISPLAY_NAMES.get(name, name)}**](https://github.com/{repo}) | {desc} | {pr_link} | {issue_link} |")
 
     comm = external.get("community", {})
     repos = comm.get("repos", [])
