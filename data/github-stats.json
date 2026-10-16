@@ -1,9 +1,9 @@
 {
   "user": "BUKOWSKIREAL",
-  "updated_at": "2026-10-16T07:09:57.210911+00:00",
+  "updated_at": "2026-10-16T20:15:10.834806+00:00",
   "total_stars": 50,
-  "contributions_1y": 519,
-  "commits_1y": 389,
+  "contributions_1y": 526,
+  "commits_1y": 396,
   "prs_1y": 66,
   "issues_1y": 31,
   "total_prs": 66,
@@ -29,25 +29,25 @@
     {
       "name": "Python",
       "size": 763750,
-      "percentage": 43.6,
+      "percentage": 43.1,
       "color": "#3572A5"
     },
     {
       "name": "Swift",
       "size": 398093,
-      "percentage": 22.7,
+      "percentage": 22.4,
       "color": "#F05138"
     },
     {
       "name": "JavaScript",
-      "size": 372459,
-      "percentage": 21.3,
+      "size": 394467,
+      "percentage": 22.2,
       "color": "#f1e05a"
     },
     {
       "name": "TypeScript",
       "size": 159842,
-      "percentage": 9.1,
+      "percentage": 9.0,
       "color": "#3178c6"
     },
     {
@@ -65,7 +65,7 @@
     {
       "name": "CSS",
       "size": 7979,
-      "percentage": 0.5,
+      "percentage": 0.4,
       "color": "#663399"
     },
     {
