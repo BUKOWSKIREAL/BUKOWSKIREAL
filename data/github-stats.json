@@ -1,19 +1,26 @@
 {
   "user": "BUKOWSKIREAL",
-  "updated_at": "2026-10-16T03:23:57.684189+00:00",
+  "updated_at": "2026-10-16T03:24:49.623056+00:00",
   "total_stars": 45,
   "contributions_1y": 516,
   "commits_1y": 143,
   "prs_1y": 28,
   "issues_1y": 31,
-  "total_prs": 28,
+  "total_prs": 66,
   "total_issues": 31,
   "repo_stars": {
     "hotcorners": 5,
+    "git-for-agent-demo": 0,
     "trace": 5,
+    "readlist": 0,
     "nixos-config": 1,
     "scrollwm": 1,
+    "personal-web": 0,
+    "-": 0,
+    "winwinwinwinwinwin": 0,
     "gitv": 0,
+    "dobby-computer-use": 0,
+    "infra_for_shu": 0,
     "pi-fusion": 1,
     "BUKOWSKIREAL": 0,
     "magpie-gemini-web": 32
@@ -81,7 +88,7 @@
     },
     "School_Running": {
       "repo": "goodsmellvegetable/School_Running",
-      "prs": 0,
+      "prs": 10,
       "issues": 0
     },
     "BewlyCat": {
@@ -90,7 +97,7 @@
       "issues": 1
     },
     "community": {
-      "prs": 8,
+      "prs": 12,
       "issues": 18,
       "repos": [
         "BerriAI/litellm",
@@ -98,8 +105,11 @@
         "MAXeaglet/commandcode-proxy",
         "MoonshotAI/kimi-code",
         "QoderAI/changelog-CLI-zh_CN",
+        "RCBI/Dobby-Engineering-Management-Agent",
         "anomalyco/models.dev",
         "billnotfound/activity_tracker",
+        "billnotfound/fountain",
+        "billnotfound/waterproxy",
         "earendil-works/pi",
         "hikariming/ghfind",
         "iAmCorey/Wake",
