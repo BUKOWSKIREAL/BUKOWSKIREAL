@@ -2,7 +2,7 @@
 
 > *Life is one long regression to the mean.*
 
-I build tools for coding agents and local-first software, mostly on macOS and NixOS, with a bit of reverse engineering on the side.
+I build tools for coding agents and local-first software, mostly on macOS and NixOS, with a bit of reverse engineering on the side. I'm also working on something about llm training/ AI infra.
 
 - 🔭 Working on [**magpie-gemini-web**](https://github.com/BUKOWSKIREAL/magpie-gemini-web), a Gemini Web provider for [Magpie](https://github.com/yetone/magpie)
 - 🛠️ Python · Swift · TypeScript, macOS Accessibility / Cocoa, NixOS flakes
