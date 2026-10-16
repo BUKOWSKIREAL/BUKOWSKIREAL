@@ -1,0 +1,125 @@
+{
+  "user": "BUKOWSKIREAL",
+  "updated_at": "2026-10-16T03:05:01.673376+00:00",
+  "total_stars": 45,
+  "contributions_1y": 513,
+  "commits_1y": 136,
+  "prs_1y": 28,
+  "issues_1y": 31,
+  "total_prs": 66,
+  "total_issues": 31,
+  "repo_stars": {
+    "hotcorners": 5,
+    "git-for-agent-demo": 0,
+    "trace": 5,
+    "readlist": 0,
+    "nixos-config": 1,
+    "scrollwm": 1,
+    "personal-web": 0,
+    "-": 0,
+    "winwinwinwinwinwin": 0,
+    "gitv": 0,
+    "dobby-computer-use": 0,
+    "infra_for_shu": 0,
+    "pi-fusion": 1,
+    "BUKOWSKIREAL": 0,
+    "magpie-gemini-web": 32
+  },
+  "languages": [
+    {
+      "name": "Python",
+      "size": 751669,
+      "percentage": 43.2,
+      "color": "#3572A5"
+    },
+    {
+      "name": "Swift",
+      "size": 398093,
+      "percentage": 22.9,
+      "color": "#F05138"
+    },
+    {
+      "name": "JavaScript",
+      "size": 372459,
+      "percentage": 21.4,
+      "color": "#f1e05a"
+    },
+    {
+      "name": "TypeScript",
+      "size": 159842,
+      "percentage": 9.2,
+      "color": "#3178c6"
+    },
+    {
+      "name": "Shell",
+      "size": 29941,
+      "percentage": 1.7,
+      "color": "#89e051"
+    },
+    {
+      "name": "Nix",
+      "size": 19020,
+      "percentage": 1.1,
+      "color": "#7e7eff"
+    },
+    {
+      "name": "CSS",
+      "size": 7979,
+      "percentage": 0.5,
+      "color": "#663399"
+    },
+    {
+      "name": "HTML",
+      "size": 964,
+      "percentage": 0.1,
+      "color": "#e34c26"
+    }
+  ],
+  "external": {
+    "CodexBar": {
+      "repo": "steipete/CodexBar",
+      "prs": 5,
+      "issues": 5
+    },
+    "agentsview": {
+      "repo": "kenn-io/agentsview",
+      "prs": 4,
+      "issues": 6
+    },
+    "School_Running": {
+      "repo": "goodsmellvegetable/School_Running",
+      "prs": 10,
+      "issues": 0
+    },
+    "BewlyCat": {
+      "repo": "keleus/BewlyCat",
+      "prs": 2,
+      "issues": 1
+    },
+    "community": {
+      "prs": 12,
+      "issues": 18,
+      "repos": [
+        "BerriAI/litellm",
+        "KonghaYao/harness-perf-benchmark",
+        "MAXeaglet/commandcode-proxy",
+        "MoonshotAI/kimi-code",
+        "QoderAI/changelog-CLI-zh_CN",
+        "RCBI/Dobby-Engineering-Management-Agent",
+        "anomalyco/models.dev",
+        "billnotfound/activity_tracker",
+        "billnotfound/fountain",
+        "billnotfound/waterproxy",
+        "earendil-works/pi",
+        "hikariming/ghfind",
+        "iAmCorey/Wake",
+        "magpie-community/plugins",
+        "openai/codex",
+        "stepfun-ai/Step-Code",
+        "tmustier/codex-computer-use-mcp",
+        "tw93/Mole",
+        "yetone/magpie"
+      ]
+    }
+  }
+}
