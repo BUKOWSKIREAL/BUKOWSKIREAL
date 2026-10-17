@@ -11,8 +11,8 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 - 📫 [bukaosiji@outlook.com](mailto:bukaosiji@outlook.com) · [X](https://x.com/zhangru81770932)
 
 <!-- stats:start -->
-⭐ **62** stars · 🔥 **526** contributions this year · 📝 **396** commits · 🔀 **66** PRs · 🐛 **31** issues
-<br/><sub>Python 43% · Swift 22% · JavaScript 22% · TypeScript 9%</sub>
+⭐ **70** stars · 🔥 **531** contributions this year · 📝 **399** commits · 🔀 **68** PRs · 🐛 **31** issues
+<br/><sub>Python 39% · JavaScript 30% · Swift 20% · TypeScript 8%</sub>
 <!-- stats:end -->
 
 #### 🧰 Things I made
@@ -20,7 +20,7 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 <!-- work:start -->
 | | Project | What it does | ⭐ |
 |:-:|:--|:--|--:|
-| 🐦 | [**magpie-gemini-web**](https://github.com/BUKOWSKIREAL/magpie-gemini-web) | Gemini Web & native Argon Task provider for Magpie <sub>`Python · JS`</sub> | 44 |
+| 🐦 | [**magpie-gemini-web**](https://github.com/BUKOWSKIREAL/magpie-gemini-web) | Gemini Web & native Argon Task provider for Magpie <sub>`Python · JS`</sub> | 52 |
 | 🧵 | [**trace**](https://github.com/BUKOWSKIREAL/trace) | Content-addressed local version tracker for CLI agents <sub>`Python`</sub> | 5 |
 | 🖥️ | [**hotcorners**](https://github.com/BUKOWSKIREAL/hotcorners) | Interactive macOS Hot Corners CLI manager <sub>`Shell`</sub> | 5 |
 | 🪟 | [**scrollwm**](https://github.com/BUKOWSKIREAL/scrollwm) | niri-style scrollable tiling window manager for macOS <sub>`Swift`</sub> | 2 |
@@ -38,7 +38,7 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 | [**agentsview**](https://github.com/kenn-io/agentsview) | StepCode ingestion, Devin dedup & Antigravity effort | [4](https://github.com/kenn-io/agentsview/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | [6](https://github.com/kenn-io/agentsview/issues?q=is%3Aissue+author%3ABUKOWSKIREAL) |
 | [**School_Running**](https://github.com/goodsmellvegetable/School_Running) | macOS native console, curve trajectory & DMG release CI | [10](https://github.com/goodsmellvegetable/School_Running/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | – |
 | [**BewlyCat**](https://github.com/keleus/BewlyCat) | Homepage filter empty-state interaction & fixes | [2](https://github.com/keleus/BewlyCat/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | [1](https://github.com/keleus/BewlyCat/issues?q=is%3Aissue+author%3ABUKOWSKIREAL) |
-| 🌍 **community** | [models.dev](https://github.com/anomalyco/models.dev), [Wake](https://github.com/iAmCorey/Wake), [pi](https://github.com/earendil-works/pi), [codex](https://github.com/openai/codex) and 14 other repos | 12 | 15 |
+| 🌍 **community** | [models.dev](https://github.com/anomalyco/models.dev), [Wake](https://github.com/iAmCorey/Wake), [pi](https://github.com/earendil-works/pi), [codex](https://github.com/openai/codex) and 14 other repos | 14 | 15 |
 <!-- oss:end -->
 
 <sub>Numbers refresh daily via [GitHub Actions](.github/workflows/update-profile.yml).</sub>
