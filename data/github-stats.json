@@ -1,7 +1,7 @@
 {
   "user": "BUKOWSKIREAL",
-  "updated_at": "2026-10-16T20:15:10.834806+00:00",
-  "total_stars": 50,
+  "updated_at": "2026-10-17T13:33:25.810459+00:00",
+  "total_stars": 62,
   "contributions_1y": 526,
   "commits_1y": 396,
   "prs_1y": 66,
@@ -14,16 +14,16 @@
     "trace": 5,
     "readlist": 0,
     "nixos-config": 2,
-    "scrollwm": 1,
+    "scrollwm": 2,
     "personal-web": 0,
     "-": 0,
     "winwinwinwinwinwin": 0,
-    "gitv": 0,
+    "gitv": 1,
     "dobby-computer-use": 0,
     "infra_for_shu": 0,
-    "pi-fusion": 1,
-    "BUKOWSKIREAL": 0,
-    "magpie-gemini-web": 36
+    "pi-fusion": 2,
+    "BUKOWSKIREAL": 1,
+    "magpie-gemini-web": 44
   },
   "languages": [
     {

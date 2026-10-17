@@ -11,7 +11,7 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 - 📫 [bukaosiji@outlook.com](mailto:bukaosiji@outlook.com) · [X](https://x.com/zhangru81770932)
 
 <!-- stats:start -->
-⭐ **50** stars · 🔥 **526** contributions this year · 📝 **396** commits · 🔀 **66** PRs · 🐛 **31** issues
+⭐ **62** stars · 🔥 **526** contributions this year · 📝 **396** commits · 🔀 **66** PRs · 🐛 **31** issues
 <br/><sub>Python 43% · Swift 22% · JavaScript 22% · TypeScript 9%</sub>
 <!-- stats:end -->
 
@@ -20,11 +20,11 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 <!-- work:start -->
 | | Project | What it does | ⭐ |
 |:-:|:--|:--|--:|
-| 🐦 | [**magpie-gemini-web**](https://github.com/BUKOWSKIREAL/magpie-gemini-web) | Gemini Web & native Argon Task provider for Magpie <sub>`Python · JS`</sub> | 36 |
+| 🐦 | [**magpie-gemini-web**](https://github.com/BUKOWSKIREAL/magpie-gemini-web) | Gemini Web & native Argon Task provider for Magpie <sub>`Python · JS`</sub> | 44 |
 | 🧵 | [**trace**](https://github.com/BUKOWSKIREAL/trace) | Content-addressed local version tracker for CLI agents <sub>`Python`</sub> | 5 |
 | 🖥️ | [**hotcorners**](https://github.com/BUKOWSKIREAL/hotcorners) | Interactive macOS Hot Corners CLI manager <sub>`Shell`</sub> | 5 |
-| 🪟 | [**scrollwm**](https://github.com/BUKOWSKIREAL/scrollwm) | niri-style scrollable tiling window manager for macOS <sub>`Swift`</sub> | 1 |
-| 🤝 | [**pi-fusion**](https://github.com/BUKOWSKIREAL/pi-fusion) | Persistent lead/sidekick orchestration for Pi <sub>`TypeScript`</sub> | 1 |
+| 🪟 | [**scrollwm**](https://github.com/BUKOWSKIREAL/scrollwm) | niri-style scrollable tiling window manager for macOS <sub>`Swift`</sub> | 2 |
+| 🤝 | [**pi-fusion**](https://github.com/BUKOWSKIREAL/pi-fusion) | Persistent lead/sidekick orchestration for Pi <sub>`TypeScript`</sub> | 2 |
 | ❄️ | [**nixos-config**](https://github.com/BUKOWSKIREAL/nixos-config) | Daily NixOS configuration built around flakes <sub>`Nix`</sub> | 2 |
 <!-- work:end -->
 
