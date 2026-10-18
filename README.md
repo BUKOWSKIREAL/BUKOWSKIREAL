@@ -11,8 +11,8 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 - 📫 [bukaosiji@outlook.com](mailto:bukaosiji@outlook.com) · [X](https://x.com/zhangru81770932)
 
 <!-- stats:start -->
-⭐ **73** stars · 🔥 **531** contributions this year · 📝 **399** commits · 🔀 **68** PRs · 🐛 **31** issues
-<br/><sub>Python 39% · JavaScript 30% · Swift 20% · TypeScript 8%</sub>
+⭐ **91** stars · 🔥 **537** contributions this year · 📝 **405** commits · 🔀 **68** PRs · 🐛 **31** issues
+<br/><sub>Python 38% · JavaScript 31% · Swift 20% · TypeScript 8%</sub>
 <!-- stats:end -->
 
 <details>
@@ -22,7 +22,7 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 <!-- work:start -->
 | | Project | What it does | ⭐ |
 |:-:|:--|:--|--:|
-| 🐦 | [**magpie-gemini-web**](https://github.com/BUKOWSKIREAL/magpie-gemini-web) | Gemini Web & native Argon Task provider for Magpie <sub>`Python · JS`</sub> | 55 |
+| 🐦 | [**magpie-gemini-web**](https://github.com/BUKOWSKIREAL/magpie-gemini-web) | Gemini Web & native Argon Task provider for Magpie <sub>`Python · JS`</sub> | 73 |
 | 🧵 | [**trace**](https://github.com/BUKOWSKIREAL/trace) | Content-addressed local version tracker for CLI agents <sub>`Python`</sub> | 5 |
 | 🖥️ | [**hotcorners**](https://github.com/BUKOWSKIREAL/hotcorners) | Interactive macOS Hot Corners CLI manager <sub>`Shell`</sub> | 5 |
 | 🪟 | [**scrollwm**](https://github.com/BUKOWSKIREAL/scrollwm) | niri-style scrollable tiling window manager for macOS <sub>`Swift`</sub> | 2 |

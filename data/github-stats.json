@@ -1,9 +1,9 @@
 {
   "user": "BUKOWSKIREAL",
-  "updated_at": "2026-10-17T19:51:23.563422+00:00",
-  "total_stars": 73,
-  "contributions_1y": 531,
-  "commits_1y": 399,
+  "updated_at": "2026-10-18T19:52:06.319575+00:00",
+  "total_stars": 91,
+  "contributions_1y": 537,
+  "commits_1y": 405,
   "prs_1y": 68,
   "issues_1y": 31,
   "total_prs": 68,
@@ -23,31 +23,31 @@
     "infra_for_shu": 0,
     "pi-fusion": 2,
     "BUKOWSKIREAL": 1,
-    "magpie-gemini-web": 55
+    "magpie-gemini-web": 73
   },
   "languages": [
     {
       "name": "Python",
       "size": 763750,
-      "percentage": 38.8,
+      "percentage": 38.0,
       "color": "#3572A5"
     },
     {
       "name": "JavaScript",
-      "size": 590714,
-      "percentage": 30.0,
+      "size": 626844,
+      "percentage": 31.2,
       "color": "#f1e05a"
     },
     {
       "name": "Swift",
       "size": 398093,
-      "percentage": 20.2,
+      "percentage": 19.8,
       "color": "#F05138"
     },
     {
       "name": "TypeScript",
       "size": 159842,
-      "percentage": 8.1,
+      "percentage": 8.0,
       "color": "#3178c6"
     },
     {
@@ -59,7 +59,7 @@
     {
       "name": "Nix",
       "size": 19020,
-      "percentage": 1.0,
+      "percentage": 0.9,
       "color": "#7e7eff"
     },
     {
@@ -67,6 +67,12 @@
       "size": 7979,
       "percentage": 0.4,
       "color": "#663399"
+    },
+    {
+      "name": "Go",
+      "size": 2355,
+      "percentage": 0.1,
+      "color": "#00ADD8"
     },
     {
       "name": "HTML",
