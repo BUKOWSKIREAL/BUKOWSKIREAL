@@ -15,7 +15,9 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 <br/><sub>Python 39% · JavaScript 30% · Swift 20% · TypeScript 8%</sub>
 <!-- stats:end -->
 
-#### 🧰 Things I made
+<details>
+<summary><b>🧰 Things I made</b></summary>
+<br>
 
 <!-- work:start -->
 | | Project | What it does | ⭐ |
@@ -28,7 +30,11 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 | ❄️ | [**nixos-config**](https://github.com/BUKOWSKIREAL/nixos-config) | Daily NixOS configuration built around flakes <sub>`Nix`</sub> | 2 |
 <!-- work:end -->
 
-#### 🌍 Open source
+</details>
+
+<details>
+<summary><b>🌍 Open source</b></summary>
+<br>
 
 <!-- oss:start -->
 | Project | What I worked on | PRs | Issues |
@@ -40,5 +46,7 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 | [**BewlyCat**](https://github.com/keleus/BewlyCat) | Homepage filter empty-state interaction & fixes | [2](https://github.com/keleus/BewlyCat/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | [1](https://github.com/keleus/BewlyCat/issues?q=is%3Aissue+author%3ABUKOWSKIREAL) |
 | 🌍 **community** | [models.dev](https://github.com/anomalyco/models.dev), [Wake](https://github.com/iAmCorey/Wake), [pi](https://github.com/earendil-works/pi), [codex](https://github.com/openai/codex) and 14 other repos | 14 | 15 |
 <!-- oss:end -->
+
+</details>
 
 <sub>Numbers refresh daily via [GitHub Actions](.github/workflows/update-profile.yml).</sub>
