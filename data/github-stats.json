@@ -1,12 +1,12 @@
 {
   "user": "BUKOWSKIREAL",
-  "updated_at": "2026-10-18T19:52:06.319575+00:00",
-  "total_stars": 91,
-  "contributions_1y": 537,
-  "commits_1y": 405,
-  "prs_1y": 68,
+  "updated_at": "2026-10-19T21:51:40.311032+00:00",
+  "total_stars": 94,
+  "contributions_1y": 542,
+  "commits_1y": 407,
+  "prs_1y": 71,
   "issues_1y": 31,
-  "total_prs": 68,
+  "total_prs": 71,
   "total_issues": 31,
   "repo_stars": {
     "hotcorners": 5,
@@ -23,31 +23,31 @@
     "infra_for_shu": 0,
     "pi-fusion": 2,
     "BUKOWSKIREAL": 1,
-    "magpie-gemini-web": 73
+    "magpie-gemini-web": 76
   },
   "languages": [
     {
       "name": "Python",
       "size": 763750,
-      "percentage": 38.0,
+      "percentage": 37.6,
       "color": "#3572A5"
     },
     {
       "name": "JavaScript",
-      "size": 626844,
-      "percentage": 31.2,
+      "size": 649387,
+      "percentage": 32.0,
       "color": "#f1e05a"
     },
     {
       "name": "Swift",
       "size": 398093,
-      "percentage": 19.8,
+      "percentage": 19.6,
       "color": "#F05138"
     },
     {
       "name": "TypeScript",
       "size": 159842,
-      "percentage": 8.0,
+      "percentage": 7.9,
       "color": "#3178c6"
     },
     {
@@ -108,7 +108,7 @@
       "issues": 1
     },
     "community": {
-      "prs": 14,
+      "prs": 16,
       "issues": 15,
       "repos": [
         "BerriAI/litellm",
