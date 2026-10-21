@@ -1,13 +1,13 @@
 {
   "user": "BUKOWSKIREAL",
-  "updated_at": "2026-10-20T21:00:23.116210+00:00",
-  "total_stars": 96,
-  "contributions_1y": 556,
-  "commits_1y": 421,
-  "prs_1y": 71,
-  "issues_1y": 31,
-  "total_prs": 71,
-  "total_issues": 31,
+  "updated_at": "2026-10-21T21:01:56.318653+00:00",
+  "total_stars": 102,
+  "contributions_1y": 567,
+  "commits_1y": 428,
+  "prs_1y": 74,
+  "issues_1y": 32,
+  "total_prs": 74,
+  "total_issues": 32,
   "repo_stars": {
     "hotcorners": 5,
     "git-for-agent-demo": 0,
@@ -23,31 +23,31 @@
     "infra_for_shu": 0,
     "pi-fusion": 2,
     "BUKOWSKIREAL": 1,
-    "magpie-gemini-web": 78
+    "magpie-gemini-web": 84
   },
   "languages": [
     {
       "name": "Python",
       "size": 763750,
-      "percentage": 37.6,
+      "percentage": 37.5,
       "color": "#3572A5"
     },
     {
       "name": "JavaScript",
-      "size": 649387,
-      "percentage": 32.0,
+      "size": 654978,
+      "percentage": 32.2,
       "color": "#f1e05a"
     },
     {
       "name": "Swift",
       "size": 398093,
-      "percentage": 19.6,
+      "percentage": 19.5,
       "color": "#F05138"
     },
     {
       "name": "TypeScript",
       "size": 159842,
-      "percentage": 7.9,
+      "percentage": 7.8,
       "color": "#3178c6"
     },
     {
@@ -85,7 +85,7 @@
     "magpie": {
       "repo": "yetone/magpie",
       "prs": 0,
-      "issues": 3
+      "issues": 4
     },
     "CodexBar": {
       "repo": "steipete/CodexBar",

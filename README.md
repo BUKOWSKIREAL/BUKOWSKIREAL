@@ -11,7 +11,7 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 - 📫 [bukaosiji@outlook.com](mailto:bukaosiji@outlook.com) · [X](https://x.com/zhangru81770932)
 
 <!-- stats:start -->
-⭐ **96** stars · 🔥 **556** contributions this year · 📝 **421** commits · 🔀 **71** PRs · 🐛 **31** issues
+⭐ **102** stars · 🔥 **567** contributions this year · 📝 **428** commits · 🔀 **74** PRs · 🐛 **32** issues
 <br/><sub>Python 38% · JavaScript 32% · Swift 20% · TypeScript 8%</sub>
 <!-- stats:end -->
 
@@ -22,7 +22,7 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 <!-- work:start -->
 | | Project | What it does | ⭐ |
 |:-:|:--|:--|--:|
-| 🐦 | [**magpie-gemini-web**](https://github.com/BUKOWSKIREAL/magpie-gemini-web) | Gemini Web & native Argon Task provider for Magpie <sub>`Python · JS`</sub> | 78 |
+| 🐦 | [**magpie-gemini-web**](https://github.com/BUKOWSKIREAL/magpie-gemini-web) | Gemini Web & native Argon Task provider for Magpie <sub>`Python · JS`</sub> | 84 |
 | 🧵 | [**trace**](https://github.com/BUKOWSKIREAL/trace) | Content-addressed local version tracker for CLI agents <sub>`Python`</sub> | 5 |
 | 🖥️ | [**hotcorners**](https://github.com/BUKOWSKIREAL/hotcorners) | Interactive macOS Hot Corners CLI manager <sub>`Shell`</sub> | 5 |
 | 🪟 | [**scrollwm**](https://github.com/BUKOWSKIREAL/scrollwm) | niri-style scrollable tiling window manager for macOS <sub>`Swift`</sub> | 2 |
@@ -39,7 +39,7 @@ I build tools for coding agents and local-first software, mostly on macOS and Ni
 <!-- oss:start -->
 | Project | What I worked on | PRs | Issues |
 |:--|:--|--:|--:|
-| [**Magpie**](https://github.com/yetone/magpie) | StepCode agent adaptation: model config & disconnect restore (merged in [8b39393](https://github.com/yetone/magpie/commit/8b393938f5a2a37a75b3b5ae034f51e3b5d12ef4), shipped in v0.1.1172) | – | [3](https://github.com/yetone/magpie/issues?q=is%3Aissue+author%3ABUKOWSKIREAL) |
+| [**Magpie**](https://github.com/yetone/magpie) | StepCode agent adaptation: model config & disconnect restore (merged in [8b39393](https://github.com/yetone/magpie/commit/8b393938f5a2a37a75b3b5ae034f51e3b5d12ef4), shipped in v0.1.1172) | – | [4](https://github.com/yetone/magpie/issues?q=is%3Aissue+author%3ABUKOWSKIREAL) |
 | [**CodexBar**](https://github.com/steipete/CodexBar) | Grok token history, StepFun credits & Claude/Codex pricing | [5](https://github.com/steipete/CodexBar/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | [5](https://github.com/steipete/CodexBar/issues?q=is%3Aissue+author%3ABUKOWSKIREAL) |
 | [**agentsview**](https://github.com/kenn-io/agentsview) | StepCode ingestion, Devin dedup & Antigravity effort | [4](https://github.com/kenn-io/agentsview/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | [6](https://github.com/kenn-io/agentsview/issues?q=is%3Aissue+author%3ABUKOWSKIREAL) |
 | [**School_Running**](https://github.com/goodsmellvegetable/School_Running) | macOS native console, curve trajectory & DMG release CI | [10](https://github.com/goodsmellvegetable/School_Running/pulls?q=is%3Apr+author%3ABUKOWSKIREAL) | – |
